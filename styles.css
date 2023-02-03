@@ -1,0 +1,215 @@
+/*Colors
+
+#595959 - dark olive
+#e6dcd4 - beige
+##ffffff - white
+
+/*Global styles
+
+---------------------*/
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+body{
+    color : #595959; 
+    margin : 0;
+    padding: 0;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+}
+img{
+    width:50%;
+    border-radius: 20px;
+}
+.education img{
+    width:200px;
+}
+h1, h2, h3{
+    font-family: 'Fredoka One', cursive;
+}
+h1{
+    font-size: 50px;
+    line-height: 1;
+}
+h2{
+    margin: 0;
+    font-size: 35px;
+}
+.projects a {
+    color : #595959;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.content-wrap{
+    max-width : 900px;
+    width : 90%;
+    margin : 0 auto; 
+    padding : 60px 0;
+}
+/* .navbar{
+    background-color: #e6dcd4;
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px; 
+    padding-left: 0;
+    border-radius: 8px;
+    border: 2px solid #595959;
+}
+.navbar a{
+    padding: 20px;
+    display: inline-block;
+    color : #595959;
+}
+.navbar a:visited{
+    color: none;
+} */
+h3{
+    margin-bottom: 0;
+}
+.item-details h3 + p{
+    font-style: italic;
+}
+.item-details h3 ~ p{
+    margin: 0;
+}
+.divider > section{
+    border-bottom: 1px dashed white;
+    padding: 25px 0; 
+}
+.divider > section:last-of-type{
+    border-bottom: none;
+}
+/*Projects
+
+---------------------*/
+header{
+    background-color: white;
+}
+.projects{
+    background-color: #595959;
+    color : white;
+}
+.description{
+    max-width : 500px;
+}
+.projects a{
+    background-color: #e6dcd4;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    display : inline-block;
+}
+.projects a:hover{
+    background: rgba(230,220,212, 80%);
+}
+.project-item{
+    overflow: hidden;
+}
+.project-item h3 {
+    margin-top : 0;
+}
+/*Work experience
+
+---------------------*/
+.work{
+    background-color: white;
+}
+/*Education
+
+---------------------*/
+ .education{
+    background-color: rgb(230,220,212);
+    text-align: left;
+ }
+ .education img{
+    margin-top: 50px;
+    border: 2px solid #595959;
+ }
+/*contact info
+
+--------------------*/
+footer{
+    background-color: #595959;
+    color : white;
+}
+footer h3{
+    margin : 0 auto;
+}
+footer a{
+    color: white;
+}
+.contact{
+    list-style-type: none;
+    padding : 0;
+}
+.contact a{
+    padding : 20px; 
+    font-size: 15px;
+    display: inline-block;
+}
+/*Responsive Styles
+
+-------------------*/
+@media screen and (min-width: 1195px){
+    .project-item img{
+        float: left;
+        margin-right: 20px;
+    }
+    .description{
+        margin-left: 250px;
+    }
+    .projects{
+        margin-left: 150px;
+        margin-right: 150px;
+        border-radius: 8px;
+    }
+    .education{
+        margin-left: 150px;
+        margin-right: 150px;
+        border-radius: 8px;
+        margin-bottom: 60px;
+    }
+}
+@media screen and (min-width: 1020px){
+    .job-item{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        grid-gap : 20px;
+    }
+    header, footer{
+        text-align: center;
+     }
+     .contact{
+        display: flex;
+        justify-content: center;
+     }
+}
+@media screen and (max-width: 1019px){
+    h1{
+        font-size: 45px;
+    }
+    h1, h2{
+        line-height: 1;
+    }
+    .contact a{
+        padding: 5px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 1085px){
+    .educ-item{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
+     }
+}
